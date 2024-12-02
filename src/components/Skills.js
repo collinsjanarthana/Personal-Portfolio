@@ -56,8 +56,28 @@ export const Skills = () => {
                                 <h5>Programming</h5>
                             </div>
                             <div className='item'>
-                                <img src={meter1} alt='Image'></img>
+                                <img src={meter3} alt='Image'></img>
                                 <h5>Project Management - Jira</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter2} alt='Image'></img>
+                                <h5>Problem-Solving</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt='Image'></img>
+                                <h5>Creativity & Innovation</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt='Image'></img>
+                                <h5>Communication</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt='Image'></img>
+                                <h5>Teamwork</h5>
+                            </div>
+                            <div className='item'>
+                                <img src={meter1} alt='Image'></img>
+                                <h5>Time Management</h5>
                             </div>
                         </Carousel>
                     </div>
