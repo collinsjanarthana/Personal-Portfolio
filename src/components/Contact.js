@@ -33,7 +33,7 @@ export const Contact = () => {
             body: JSON.stringify(formDetails)
         })
         setButtonText("Send")
-        let result = response.json()
+        let result = await response.json()
         setFormDetais(formInitialDetails)
         if (result.code === 200) {
             setStatus({ success: true, message: 'Message sent successfully' })
@@ -54,10 +54,10 @@ export const Contact = () => {
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col size={12} sm={6} className='px-1'>
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstname', e.target.value)} />
+                                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                                 </Col>
                                 <Col size={12} sm={6} className='px-1'>
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastname', e.target.value)} />
+                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                                 </Col>
                                 <Col size={12} sm={6} className='px-1'>
                                     <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />

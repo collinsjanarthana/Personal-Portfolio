@@ -13,7 +13,7 @@ export const Projects = () => {
         },
         {
             title: "Task Scheduler",
-            description: "Project Management System",
+            description: "Task Management System",
             imgUrl: projImgl,
         },
         {
