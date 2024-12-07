@@ -109,6 +109,13 @@ nav.navbar {
   transition: 0.32s ease-in-out;
 }
 
+.logo {
+  width: 100px; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+  border-radius: 50%; /* Fully rounded corners */
+  object-fit: cover; /* Ensures the image doesn't stretch */
+}
+
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
@@ -275,11 +282,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************************************************************************/
 
 /************ Banner Css ************/
-.banner {
+/* .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background: linear-gradient(135deg, #AA367C, #4A2FBD);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -288,7 +303,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(231, 111, 238, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -353,6 +368,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
+}
+
+/********************About Css ******************************************/
+.about h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.about p {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
 
 /***********************************************************************/
@@ -709,14 +738,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-.footer-logo {
-  width: 50px; /* Adjust as per your logo size */
-  height: auto;
+.footer {
+  padding: 30px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center;      /* Center text alignment */
 }
 
 .social-icons {
-  display: inline-flex;
-  gap: 10px; /* Adds space between icons */
+  display: flex;           /* Horizontal layout for icons */
+  gap: 15px;               /* Adds space between icons */
+  margin-bottom: 15px;     /* Space between icons and text */
 }
 
 .social-icons a {
@@ -748,8 +786,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-size: 14px;
   color: #B8B8B8;
-  margin-top: 10px;
+  margin: 0; /* Removes unnecessary margin */
 }
+
 
 /************************************************************************************************************/
 

@@ -1,7 +1,14 @@
 import { Container, Col, Row, Tab, Nav } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImgl from '../assets/img/projImgl.PNG';
+import omnibiz from '../assets/img/omnibiz.PNG'
+import vehiclevista from '../assets/img/vehiclevista.jpg'
+import bookstore from '../assets/img/bookstore.PNG'
+import finance from '../assets/img/finance.PNG'
+import foody from '../assets/img/foody.PNG'
+import portfolio from '../assets/img/portfolio.PNG'
+import task from '../assets/img/task.PNG'
+import inventory from '../assets/img/inventory.PNG'
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
@@ -9,47 +16,47 @@ export const Projects = () => {
         {
             title: "OmniBiz",
             description: "Business Management System",
-            imgUrl: projImgl,
+            imgUrl: omnibiz,
         },
         {
             title: "Task Scheduler",
             description: "Task Management System",
-            imgUrl: projImgl,
+            imgUrl: task,
         },
         {
             title: "Inventory Tracker",
             description: "Inventory Management System",
-            imgUrl: projImgl,
+            imgUrl: inventory,
         },
         {
             title: "VehicleVista",
             description: "Vehicle Management System",
-            imgUrl: projImgl,
+            imgUrl: vehiclevista,
         },
         {
             title: "BookStore",
             description: "Book store Management System-MERN ",
-            imgUrl: projImgl,
+            imgUrl: bookstore,
         },
         {
             title: "Personal-Portfolio",
             description: "My Personal Portfolio",
-            imgUrl: projImgl,
+            imgUrl: portfolio,
         },
         {
             title: "Student-Record",
             description: "Student Record Management System-Django",
-            imgUrl: projImgl,
+            imgUrl: omnibiz,
         },
         {
             title: "Foody-Website",
             description: "Food Store System",
-            imgUrl: projImgl,
+            imgUrl: foody,
         },
         {
-            title: "ToDO",
-            description: "To do Mobile Application",
-            imgUrl: projImgl,
+            title: "Monefy",
+            description: "Personal Finance Tracking System -MERN",
+            imgUrl: finance,
         },
     ];
 
