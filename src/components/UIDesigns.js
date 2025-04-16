@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DesignCard from './DesignCard';
-import { Container, Row, Col, Pagination } from 'react-bootstrap';
+import { Container, Pagination } from 'react-bootstrap';
 import Masonry from 'react-masonry-css';
 import './DesignGallery.css';
 import tourism1 from '../assets/img/t1.PNG';
