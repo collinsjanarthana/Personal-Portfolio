@@ -106,7 +106,8 @@ export const UIDesigns = () => {
     const currentDesign = designs[currentPage];
 
     return (
-        <Container className="design my-5">
+        <section className='design' id='design'>
+        <Container className="my-5">
             <h2>My UI/UX Designs</h2>
             <p>Here are some designs that I created</p>
 
@@ -161,6 +162,7 @@ export const UIDesigns = () => {
                 />
             </Pagination>
         </Container>
+        </section>
     );
 };
 
