@@ -578,7 +578,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /***********************************************************************************************************************/
-/************ Contact Css ************/
+
+
+/***************************** design samples Css ************/
+.design h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.design p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.design h4{
+  letter-spacing: 0.8px;
+}
+.design h6{
+  color: #B8B8B8;
+  letter-spacing: 0.8px;
+
+}
+.vvd {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.vvd span {
+  z-index: 1;
+  position: relative;
+}
+
+.vvd::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.vvd:hover {
+  color: #121212;
+}
+
+.vvd:hover::before {
+  width: 100%;
+}
+
+.pagination .page-item .page-link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
+
+/* On hover */
+.pagination .page-item .page-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: #f1f1f1;
+}
+
+/* Active page style */
+.pagination .page-item.active .page-link {
+  color: rgb(11, 11, 11);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+
+/******************************** Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;

@@ -4,6 +4,7 @@ import {Banner} from './components/Banner';
 import {About} from './components/About';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
+import {UIDesigns} from './components/UIDesigns'
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,6 +17,7 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <UIDesigns/>
       <Contact/>
       <Footer/>
     </div>
